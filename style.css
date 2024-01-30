@@ -1,0 +1,121 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+}
+.elements-container {
+    height: 100dvh;
+    overflow-y: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.header {
+    width: 100%;
+    height: 100dvh;
+    scroll-snap-align: center;
+    background-image: url("4k-Muscle.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-container {
+    width: 100%;
+    height: 100%;
+    background: #000000d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.header-container p {
+    font-size: 150%;
+    margin: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 221, 255);
+}
+.header-container span {
+    font-size: 1000%;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.header-container p:hover, .header-container span:hover {
+    animation: bounce 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+  }
+
+.section {
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    background: rgb(189, 201, 224);
+}
+.section div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#convert-btn {
+    margin-top: 6%;
+    font-size: 120%;
+    font-weight: 900;
+}
+.transcribed-text {
+    margin: 3rem;
+    position: relative;
+    width: 90%;
+    background: #e2eef9;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.transcribed-text img {
+    max-width: 95%;
+    height: auto;
+    margin: 1.8rem 0;
+    &:hover {
+        border-radius: 15px;
+        transform: scale(1.07);
+        transition: all .4s ease-in;
+        box-shadow: 1px 1px 20px #00000086, -1px -1px 20px #00000086;
+    }
+}
+#icons-container {
+    display: flex;
+    margin: 4rem 0;
+    height: auto;
+    padding: 10px 25px;
+    background: #000000c3;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#icons-container span img {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 560px) {
+    .header-container span {
+        font-size: 70px;
+    }
+    .header-container p {
+        font-size: 94%;
+    }
+}
