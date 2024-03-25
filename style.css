@@ -54,6 +54,13 @@ html, body {
     100% { transform: translateY(-50px); }
   }
 
+.intro {
+    width: 70%;
+    padding: 13px;
+    border: 2px solid lightblue;
+    margin: 2rem 0;
+}
+
 .section {
     display: flex;
     justify-content: center;
@@ -84,6 +91,11 @@ html, body {
     border-radius: 5px;
     align-items: center;
     justify-content: center;
+    span {
+        margin: 2rem 0;
+        width: 70%;
+        padding: 13px;
+    }
 }
 .transcribed-text img {
     max-width: 95%;
