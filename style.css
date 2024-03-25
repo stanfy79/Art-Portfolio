@@ -63,7 +63,7 @@ html, body {
     position: relative;
     width: 100%;
     z-index: 2;
-    background: rgb(189, 201, 224);
+    background: black;
 }
 .section div {
     display: flex;
@@ -79,7 +79,7 @@ html, body {
     margin: 3rem;
     position: relative;
     width: 90%;
-    background: #e2eef9;
+    background:rgb(189, 201, 224);
     padding: 15px;
     border-radius: 5px;
     align-items: center;
