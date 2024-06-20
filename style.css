@@ -86,7 +86,7 @@ html, body {
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     backdrop-filter: blur(15px);
     background: #00000086;
     padding: 15px;
@@ -105,7 +105,7 @@ html, body {
         border-radius: 15px;
         transform: scale(1.07);
         transition: all .4s ease-in;
-        box-shadow: 1px 1px 20px #00000086, -1px -1px 20px #00000086;
+        box-shadow: 1px 1px 20px #F0f0e6, -1px -1px 20px #00000086;
     }
 }
 #connect-link-profile {
