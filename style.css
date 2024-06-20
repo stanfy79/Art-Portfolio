@@ -98,6 +98,7 @@ html, body {
 }
 .transcribed-text img {
     width: 100%;
+    max-width: 450px;
     height: auto;
     margin: 1.8rem 0;
     border-radius: 10px;
@@ -111,7 +112,7 @@ html, body {
 #connect-link-profile {
     position: fixed;
     z-index: 5;
-    right: 10px;
+    right: 16px;
     bottom: 5%;
     img {
         border-radius: 50%;
