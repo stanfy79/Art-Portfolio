@@ -87,7 +87,7 @@ html, body {
     width: 100%;
     display: grid;
     grid-template-row: auto auto;
-    flex-flow: row wrap;
+    flex-direction: row;
     backdrop-filter: blur(15px);
     background: #00000086;
     padding: 15px;
@@ -95,12 +95,6 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
-    span {
-        margin: 8rem 0;
-        width: 80%;
-        border: 2px solid lightblue;
-        padding: 25px;
-    }
 }
 .transcribed-text img {
     width: 100%;
