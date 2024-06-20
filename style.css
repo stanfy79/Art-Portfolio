@@ -30,11 +30,11 @@ html, body {
     position: absolute;
 }
 .header-container p {
-    font-size: 150%;
+    font-size: 170%;
     margin: 25px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 221, 255);
-    animation: bounce 0.6s;
+    animation: bounce 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -43,7 +43,7 @@ html, body {
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    animation: bounce 0.6s;
+    animation: bounce 1.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -85,7 +85,8 @@ html, body {
     margin: 3rem;
     position: relative;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-flow: column wrap;
     backdrop-filter: blur(15px);
     background: #00000086;
@@ -94,8 +95,6 @@ html, body {
     justify-content: center;
     align-items: center;
     color: white;
-    align-items: center;
-    justify-content: center;
     span {
         margin: 8rem 0;
         width: 80%;
@@ -104,7 +103,7 @@ html, body {
     }
 }
 .transcribed-text img {
-    max-width: 95%;
+    width: 100%;
     height: auto;
     margin: 1.8rem 0;
     border-radius: 15px;
