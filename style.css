@@ -86,8 +86,8 @@ html, body {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    flex-flow: column wrap;
+    grid-template-row: auto auto;
+    flex-flow: row wrap;
     backdrop-filter: blur(15px);
     background: #00000086;
     padding: 15px;
